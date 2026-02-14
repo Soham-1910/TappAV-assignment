@@ -5,176 +5,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epson EH-LS12000B | TappAV Official Store</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
-<body class="text-white antialiased">
+<body class="product-page">
 
-    <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
-        <a href="index.html" class="group flex items-center text-gray-400 hover:text-white transition">
-            <i class="fa-solid fa-arrow-left-long mr-3 group-hover:-translate-x-2 transition-transform"></i>
-            <span class="text-xs font-bold uppercase tracking-widest">Back to Showroom</span>
-        </a>
-        <div class="text-xl font-black italic tracking-tighter">TAPPAV<span class="text-blue-500">.</span></div>
-        <div class="flex items-center space-x-6">
-            <i class="fa-solid fa-share-nodes text-gray-400 hover:text-white cursor-pointer"></i>
-            <div class="relative cursor-pointer">
-                <i class="fa-solid fa-cart-shopping text-gray-400 hover:text-white"></i>
-                <span class="absolute -top-2 -right-2 bg-blue-600 text-[9px] rounded-full px-1.5 font-bold">0</span>
+    <header class="product-header">
+        <div class="header-container">
+            <a href="index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left-long"></i>
+                <span>Back to Showroom</span>
+            </a>
+            <div class="logo">TAPPAV<span>.</span></div>
+            <div class="header-actions">
+                <i class="fa-solid fa-share-nodes icon-btn"></i>
+                <div class="cart-wrapper">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <main class="max-w-7xl mx-auto px-6 pb-24">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+    <main class="product-main">
+        <div class="product-grid">
 
-            <div class="space-y-6">
-                <div
-                    class="group relative glass-card rounded-[2.5rem] p-8 md:p-12 flex items-center justify-center h-[350px] md:h-[500px]">
-                    <button onclick="prevImage()"
-                        class="absolute left-6 z-10 bg-white/10 hover:bg-blue-600 text-white w-12 h-12 rounded-full backdrop-blur-md flex items-center justify-center transition-all opacity-0 group-hover:opacity-100">
+            <div class="product-gallery">
+                <div class="main-stage">
+                    <button onclick="prevImage()" class="nav-arrow prev">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
 
-                    <img id="mainImage" src="assets/1.jpg"
-                        class="max-w-full max-h-full object-contain transition-opacity duration-300 drop-shadow-[0_20px_50px_rgba(59,130,246,0.15)]">
+                    <img id="mainImage" src="assets/1.jpg" alt="Epson Projector">
 
-                    <button onclick="nextImage()"
-                        class="absolute right-6 z-10 bg-white/10 hover:bg-blue-600 text-white w-12 h-12 rounded-full backdrop-blur-md flex items-center justify-center transition-all opacity-0 group-hover:opacity-100">
+                    <button onclick="nextImage()" class="nav-arrow next">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
 
-                <div class="flex space-x-4 overflow-x-auto no-scrollbar py-2">
-                    <button onclick="changeImage(0)"
-                        class="thumbnail thumbnail-active w-24 h-20 rounded-2xl p-2 flex-shrink-0">
-                        <img src="assets/1.jpg" class="w-full h-full object-contain">
+                <div class="thumbnail-strip no-scrollbar">
+                    <button onclick="changeImage(0)" class="thumbnail active">
+                        <img src="assets/1.jpg" alt="View 1">
                     </button>
-                    <button onclick="changeImage(1)" class="thumbnail w-24 h-20 rounded-2xl p-2 flex-shrink-0">
-                        <img src="assets/2.jpg" class="w-full h-full object-contain">
+                    <button onclick="changeImage(1)" class="thumbnail">
+                        <img src="assets/2.jpg" alt="View 2">
                     </button>
-                    <button onclick="changeImage(2)" class="thumbnail w-24 h-20 rounded-2xl p-2 flex-shrink-0">
-                        <img src="assets/3.jpg" class="w-full h-full object-contain">
+                    <button onclick="changeImage(2)" class="thumbnail">
+                        <img src="assets/3.jpg" alt="View 3">
                     </button>
-                    <button onclick="changeImage(3)" class="thumbnail w-24 h-20 rounded-2xl p-2 flex-shrink-0">
-                        <img src="assets/4.jpg" class="w-full h-full object-contain">
+                    <button onclick="changeImage(3)" class="thumbnail">
+                        <img src="assets/4.jpg" alt="View 4">
                     </button>
-                    <button onclick="changeImage(4)" class="thumbnail w-24 h-20 rounded-2xl p-2 flex-shrink-0">
-                        <img src="assets/5.jpg" class="w-full h-full object-contain">
+                    <button onclick="changeImage(4)" class="thumbnail">
+                        <img src="assets/5.jpg" alt="View 5">
                     </button>
                 </div>
             </div>
 
-            <div class="flex flex-col">
-                <div class="flex items-center space-x-3 mb-4">
-                    <span class="text-blue-500 font-bold text-[10px] uppercase tracking-[0.3em]">Flagship Series</span>
-                    <span class="h-[1px] w-8 bg-gray-800"></span>
-                    <span class="text-gray-500 text-[10px] uppercase tracking-widest">Model: EH-LS12000B</span>
+            <div class="product-info">
+                <div class="product-meta">
+                    <span class="series-tag">Flagship Series</span>
+                    <span class="divider"></span>
+                    <span class="model-number">Model: EH-LS12000B</span>
                 </div>
 
-                <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">EH-LS12000B <br><span
-                        class="text-blue-500 italic">4K Laser Cinema</span></h1>
+                <h1 class="product-title">EH-LS12000B <br><span>4K Laser Cinema</span></h1>
 
-                <div class="flex items-baseline space-x-4 mb-8">
-                    <span class="text-4xl font-bold">₹4,99,999</span>
-                    <span class="text-gray-500 line-through text-lg">₹5,49,000</span>
+                <div class="price-block">
+                    <span class="current-price">₹4,99,999</span>
+                    <span class="old-price">₹5,49,000</span>
                 </div>
 
-                <div class="glass-card rounded-3xl p-6 mb-8 border-l-4 border-l-blue-600">
-                    <p class="text-gray-300 text-sm leading-relaxed italic">
-                        "The LS12000B is a masterpiece of precision, delivering the black levels and color accuracy
-                        required for high-end dedicated theaters."
-                    </p>
-                    <p class="text-blue-500 font-bold text-[10px] mt-3 uppercase tracking-widest">— TappAV Tech Verdict
-                    </p>
+                <div class="expert-quote">
+                    <p>"The LS12000B is a masterpiece of precision, delivering the black levels and color accuracy
+                        required for high-end dedicated theaters."</p>
+                    <cite>— TappAV Tech Verdict</cite>
                 </div>
 
-                <div class="grid grid-cols-3 gap-4 mb-10 text-center">
-                    <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
-                        <i class="fa-solid fa-sun text-blue-500 mb-2"></i>
-                        <p class="text-[9px] uppercase text-gray-500 font-bold">Lumens</p>
-                        <p class="text-sm font-bold text-white">2,700</p>
+                <div class="specs-mini-grid">
+                    <div class="spec-card">
+                        <i class="fa-solid fa-sun"></i>
+                        <span class="spec-label">Lumens</span>
+                        <span class="spec-value">2,700</span>
                     </div>
-                    <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
-                        <i class="fa-solid fa-clapperboard text-blue-500 mb-2"></i>
-                        <p class="text-[9px] uppercase text-gray-500 font-bold">HDR</p>
-                        <p class="text-sm font-bold text-white">HDR10+</p>
+                    <div class="spec-card">
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <span class="spec-label">HDR</span>
+                        <span class="spec-value">HDR10+</span>
                     </div>
-                    <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
-                        <i class="fa-solid fa-microchip text-blue-500 mb-2"></i>
-                        <p class="text-[9px] uppercase text-gray-500 font-bold">Input</p>
-                        <p class="text-sm font-bold text-white">HDMI 2.1</p>
+                    <div class="spec-card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span class="spec-label">Input</span>
+                        <span class="spec-value">HDMI 2.1</span>
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button
-                        class="flex-1 bg-blue-600 text-white py-5 rounded-full font-bold uppercase text-xs tracking-[0.2em] hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 active:scale-95">Add
-                        to Project</button>
-                    <button
-                        class="flex-1 border border-white/10 text-white py-5 rounded-full font-bold uppercase text-xs tracking-[0.2em] hover:bg-white/5 transition active:scale-95">Download
-                        PDF</button>
+                <div class="action-buttons">
+                    <button class="btn-buy">Add to Project</button>
+                    <button class="btn-download">Download PDF</button>
                 </div>
 
-                <div class="mt-10 flex items-center justify-between px-2 text-gray-500">
-                    <div class="flex items-center space-x-2"><i class="fa-solid fa-shield-check text-xs"></i><span
-                            class="text-[10px] uppercase font-bold tracking-widest">3 Year Warranty</span></div>
-                    <div class="flex items-center space-x-2"><i class="fa-solid fa-truck text-xs"></i><span
-                            class="text-[10px] uppercase font-bold tracking-widest">Expert Delivery</span></div>
-                    <div class="flex items-center space-x-2"><i class="fa-solid fa-screwdriver-wrench text-xs"></i><span
-                            class="text-[10px] uppercase font-bold tracking-widest">Pro Install</span></div>
+                <div class="trust-signals">
+                    <div class="signal"><i class="fa-solid fa-shield-check"></i> <span>3 Year Warranty</span></div>
+                    <div class="signal"><i class="fa-solid fa-truck"></i> <span>Expert Delivery</span></div>
+                    <div class="signal"><i class="fa-solid fa-screwdriver-wrench"></i> <span>Pro Install</span></div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-24 max-w-4xl mx-auto">
-            <div class="flex space-x-12 border-b border-white/10 mb-12">
-                <button onclick="switchTab('overview')" id="tab-overview"
-                    class="tab-active pb-4 font-bold uppercase text-[10px] tracking-widest">The Experience</button>
-                <button onclick="switchTab('tech')" id="tab-tech"
-                    class="pb-4 text-gray-500 hover:text-white font-bold uppercase text-[10px] tracking-widest transition">Full
-                    Specifications</button>
+        <div class="product-details-tabs">
+            <div class="tab-header">
+                <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn active">The Experience</button>
+                <button onclick="switchTab('tech')" id="tab-tech" class="tab-btn">Full Specifications</button>
             </div>
 
-            <div id="content-overview" class="tab-content text-gray-400 leading-relaxed">
-                <h3 class="text-2xl font-bold text-white mb-6">Redefining High-Definition.</h3>
-                <p class="mb-6">The Epson EH-LS12000B brings a true cinema experience home. Using a specialized 3LCD
-                    laser light source, it eliminates the "rainbow effect" found in other technologies while maintaining
-                    deep, inky black levels that rival the best commercial theaters.</p>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                    <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-blue-500"></i><span>4K
-                            PRO-UHD Resolution Enhancement</span></li>
-                    <li class="flex items-center space-x-3"><i
-                            class="fa-solid fa-check text-blue-500"></i><span>Scene-adaptive Gamma Correction</span>
-                    </li>
-                    <li class="flex items-center space-x-3"><i
-                            class="fa-solid fa-check text-blue-500"></i><span>2,500,000:1 Dynamic Contrast Ratio</span>
-                    </li>
-                    <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-blue-500"></i><span>Fully
-                            Motorized Lens & Focus</span></li>
+            <div id="content-overview" class="tab-pane active">
+                <h3>Redefining High-Definition.</h3>
+                <p>The Epson EH-LS12000B brings a true cinema experience home. Using a specialized 3LCD laser light
+                    source, it eliminates the "rainbow effect" found in other technologies.</p>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-check"></i> 4K PRO-UHD Resolution Enhancement</li>
+                    <li><i class="fa-solid fa-check"></i> Scene-adaptive Gamma Correction</li>
+                    <li><i class="fa-solid fa-check"></i> 2,500,000:1 Dynamic Contrast Ratio</li>
+                    <li><i class="fa-solid fa-check"></i> Fully Motorized Lens & Focus</li>
                 </ul>
             </div>
 
-            <div id="content-tech" class="tab-content hidden">
-                <div class="space-y-4">
-                    <div class="flex justify-between border-b border-white/5 py-4"><span
-                            class="text-gray-500 font-bold uppercase text-[10px]">Projection System</span><span>3LCD
-                            Technology, RGB liquid crystal shutter</span></div>
-                    <div class="flex justify-between border-b border-white/5 py-4"><span
-                            class="text-gray-500 font-bold uppercase text-[10px]">Refresh Rate</span><span>120Hz (at
-                            4K)</span></div>
-                    <div class="flex justify-between border-b border-white/5 py-4"><span
-                            class="text-gray-500 font-bold uppercase text-[10px]">Weight</span><span>12.7 kg</span>
-                    </div>
+            <div id="content-tech" class="tab-pane">
+                <div class="tech-table">
+                    <div class="table-row"><span>Projection System</span><span>3LCD Technology</span></div>
+                    <div class="table-row"><span>Refresh Rate</span><span>120Hz (at 4K)</span></div>
+                    <div class="table-row"><span>Weight</span><span>12.7 kg</span></div>
                 </div>
             </div>
         </div>
     </main>
 
-    <script src="script.js"></script>
+    <script>
+        const images = ['assets/1.jpg', 'assets/2.jpg', 'assets/3.jpg', 'assets/4.jpg', 'assets/5.jpg'];
+        let currentIndex = 0;
+
+        function updateUI() {
+            const mainImg = document.getElementById('mainImage');
+            const thumbs = document.querySelectorAll('.thumbnail');
+            mainImg.style.opacity = '0';
+            setTimeout(() => {
+                mainImg.src = images[currentIndex];
+                mainImg.style.opacity = '1';
+                thumbs.forEach((t, i) => t.classList.toggle('active', i === currentIndex));
+            }, 200);
+        }
+
+        function nextImage() { currentIndex = (currentIndex + 1) % images.length; updateUI(); }
+        function prevImage() { currentIndex = (currentIndex - 1 + images.length) % images.length; updateUI(); }
+        function changeImage(index) { currentIndex = index; updateUI(); }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('content-' + tabId).classList.add('active');
+            document.getElementById('tab-' + tabId).classList.add('active');
+        }
+    </script>
 </body>
 
 </html>
